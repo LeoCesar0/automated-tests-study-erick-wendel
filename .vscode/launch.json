@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Node.js Debug Port",
+      "request": "attach",
+      "port": 9229,
+      "type": "node",
+      "skipFiles": [
+          "<node_internals>/**",
+          "${workspaceFolder}/**/node_modules/**/*.js",
+          "**/.vscode/**",
+      ],
+      "smartStep": true,
+      "internalConsoleOptions": "openOnSessionStart",
+      "restart": true
+      // "name": "Debug Jest Tests",
+      // "type": "node",
+      // "request": "launch",
+      // "runtimeArgs": [
+      //   "--experimental-vm-modules",
+      //   "--inspect-brk",
+      //   "${workspaceRoot}/node_modules/jest/bin/jest.js",
+      //   "--runInBand",
+      //   "--watchAll",
+      //   "test/"
+      // ],
+      // "console": "integratedTerminal",
+      // "internalConsoleOptions": "neverOpen",
+      // "restart": true
+    }
+  ]
+}

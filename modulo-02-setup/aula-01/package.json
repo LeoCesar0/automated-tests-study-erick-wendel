@@ -6,12 +6,12 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand test/",
     "test:dev": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --watchAll test/",
-    "test:debug": "node --experimental-vm-modules --inspect-brk node_modules/.bin/jest --runInBand --watchAll test/"
+    "test:debug": "node --experimental-vm-modules --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watchAll ./test/"
   },
   "author": "Leo César",
   "license": "ISC",
   "engines": {
-    "node": "v18.12.1"
+    "node": "v18.17.0"
   },
   "type": "module",
   "devDependencies": {

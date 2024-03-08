@@ -1,6 +1,8 @@
 import { it } from "@jest/globals";
 
-const sum = (a, b) => a + b;
+const sum = (a, b) => {
+    return a + b
+};
 
 
 it('sums numbers', () => {
