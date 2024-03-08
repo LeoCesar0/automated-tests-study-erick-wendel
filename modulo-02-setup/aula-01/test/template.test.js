@@ -1,4 +1,4 @@
-import { it } from "@jest/globals";
+import { it, expect } from "@jest/globals";
 
 const sum = (a, b) => {
     return a + b
