@@ -1,0 +1,23 @@
+{
+  "name": "aula-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "npx cucumber-js",
+    "test:dev": "node --watch ./node_modules/@cucumber/cucumber/bin/cucumber.js --fail-fast --format progress --format html:cucumber-report.html",
+    "test:debug": "node --watch --inspect-brk ./node_modules/@cucumber/cucumber/bin/cucumber.js --fail-fast --format progress --format html:cucumber-report.html"
+  },
+  "author": "Leo César",
+  "license": "ISC",
+  "engines": {
+    "node": "v20.11.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "eslint": "^8.57.0",
+    "sinon": "^17.0.1"
+  }
+}

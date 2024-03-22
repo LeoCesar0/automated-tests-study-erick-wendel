@@ -1,8 +1,8 @@
 import { once } from "node:events";
-import { checkUserAge } from "../helpers/checkUserAge";
+import { checkUserAge } from "../helpers/checkUserAge.js";
 import { randomUUID } from "node:crypto";
-import { USER_EXCEPTIONS } from "../static/exceptions";
-import { usersDB } from "../api";
+import { USER_EXCEPTIONS } from "../static/exceptions.js";
+import { usersDB } from "../api.js";
 
 export const createUser = async (req, res) => {
   const data = await once(req, "data");
@@ -29,6 +29,7 @@ export const createUser = async (req, res) => {
     id: userId,
     name: userPayload.name,
     category: category,
+    birthDay: userPayload.birthDay
   });
   res.writeHead(201, {
     "Content-Type": "application/json",

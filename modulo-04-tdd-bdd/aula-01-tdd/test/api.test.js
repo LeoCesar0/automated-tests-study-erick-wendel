@@ -44,7 +44,7 @@ describe("Api E2E Test Suite", () => {
   it("should throw an error if the user is under 18 years old", async () => {
     const payload = {
       name: "Fulano de Tal",
-      birthday: "2010-05-01",
+      birthDay: "2010-05-01",
     };
     const result = await createUser(payload);
 
@@ -65,7 +65,7 @@ describe("Api E2E Test Suite", () => {
     });
     const payload = {
       name: "Fulano de Tal",
-      birthday: "2000-05-01",
+      birthDay: "2000-05-01",
     };
     const result = await createUser(payload);
     const data = await result.json();
@@ -85,7 +85,7 @@ describe("Api E2E Test Suite", () => {
     });
     const payload = {
       name: "Fulano de Tal",
-      birthday: "1985-05-01",
+      birthDay: "1985-05-01",
     };
     const result = await createUser(payload);
     const data = await result.json();
@@ -104,7 +104,7 @@ describe("Api E2E Test Suite", () => {
     });
     const payload = {
       name: "Fulano de Tal",
-      birthday: "1950-05-01",
+      birthDay: "1950-05-01",
     };
     const result = await createUser(payload);
     const data = await result.json();

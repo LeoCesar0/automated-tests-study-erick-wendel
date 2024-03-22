@@ -147,13 +147,13 @@ export const createUser = async (req, res) =&gt; {
   const data = await once(req, "data");
   const userPayload = JSON.parse(data.toString());
 &nbsp;
-  if (!userPayload.birthday) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+  if (!userPayload.birthDay) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >    throw new Error(USER_EXCEPTIONS.BIRTHDAY_REQUIRED);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
   if (!userPayload.name) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >    throw new Error(USER_EXCEPTIONS.NAME_REQUIRED);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  const birthdayDate = new Date(userPayload.birthday);
+  const birthdayDate = new Date(userPayload.birthDay);
 &nbsp;
   if (isNaN(birthdayDate.getTime())) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >    throw new Error(USER_EXCEPTIONS.BIRTHDAY_INVALID);</span>
