@@ -1,7 +1,9 @@
 import { When, Then, Given } from "@badeball/cypress-cucumber-preprocessor";
 
 
-Given("I am on the image registration page", () => {})
+Given("I am on the image registration page", () => {
+    cy.visit('/')
+})
 
 When("I enter {string} in the title field", () => {})
 
