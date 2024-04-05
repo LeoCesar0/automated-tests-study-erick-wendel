@@ -1,0 +1,5 @@
+
+> aula-01@1.0.0 test
+> npx jest --injectGlobals false --runInBand test/
+
+Deseja finalizar o arquivo em lotes (S/N)? 
