@@ -1,0 +1,27 @@
+{
+  "name": "aula-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "DEBUG=nock* NODE_OPTIONS=--experimental-vm-modules npx jest --injectGlobals false --runInBand test/",
+    "test:dev": "DEBUG=nock* NODE_OPTIONS=--experimental-vm-modules npx jest --injectGlobals false --runInBand --watchAll test/",
+    "test:debug": "DEBUG=nock* node --experimental-vm-modules --inspect-brk ./node_modules/jest/bin/jest.js --injectGlobals false --runInBand --watchAll ./test/",
+    "test:bin": "DEBUG=nock* node --experimental-vm-modules ./node_modules/jest/bin/jest.js --runInBand",
+    "test:bin:watch": "DEBUG=nock* node --experimental-vm-modules ./node_modules/jest/bin/jest.js --runInBand --watchAll test/"
+  },
+  "author": "Leo César",
+  "license": "ISC",
+  "engines": {
+    "node": "v18.17.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nock": "^13.4.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.5"
+  }
+}
